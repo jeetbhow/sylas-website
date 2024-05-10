@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-item {
+  @apply p-2 rounded hover:bg-slate-300 duration-200 cursor-pointer text-zinc-700;
+}
+
+.section-container {
+  @apply max-w-7xl w-full mx-auto;
+}
+
+.button {
+  @apply p-3 font-medium rounded-md hover:opacity-80 duration-200;
+}
