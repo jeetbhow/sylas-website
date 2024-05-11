@@ -590,7 +590,7 @@ var _aosDefault = parcelHelpers.interopDefault(_aos);
 var _aosCss = require("aos/dist/aos.css"); // You can also use <link> for styles
 (0, _aosDefault.default).init();
 
-},{"aos":"eRzTM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","aos/dist/aos.css":"iYkXi"}],"eRzTM":[function(require,module,exports) {
+},{"aos":"eRzTM","aos/dist/aos.css":"iYkXi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eRzTM":[function(require,module,exports) {
 var global = arguments[3];
 !function(e, t) {
     module.exports = t();
@@ -956,7 +956,7 @@ var global = arguments[3];
     };
 });
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"iYkXi":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -986,6 +986,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"iYkXi":[function() {},{}]},["farZc","8lqZg"], "8lqZg", "parcelRequire10e8")
+},{}]},["farZc","8lqZg"], "8lqZg", "parcelRequire10e8")
 
 //# sourceMappingURL=index.975ef6c8.js.map
