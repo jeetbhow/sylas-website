@@ -589,6 +589,16 @@ var _aos = require("aos");
 var _aosDefault = parcelHelpers.interopDefault(_aos);
 var _aosCss = require("aos/dist/aos.css"); // You can also use <link> for styles
 (0, _aosDefault.default).init();
+const hamburger = document.getElementById("hamburger");
+const navbar = document.querySelector("nav");
+const header = document.querySelector("header");
+hamburger.addEventListener("click", ()=>{
+    setTimeout(()=>navbar.classList.toggle("opacity-100"), 10);
+    hamburger.classList.toggle("open");
+    navbar.classList.toggle("mobile");
+    navbar.classList.toggle("hidden");
+    header.classList.toggle("mobile");
+});
 
 },{"aos":"eRzTM","aos/dist/aos.css":"iYkXi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eRzTM":[function(require,module,exports) {
 var global = arguments[3];

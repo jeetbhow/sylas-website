@@ -15,19 +15,25 @@
   <!-- Header -->
   <header class="section-container p-6">
     <div class="lg:flex lg:flex-row lg:justify-between">
+
       <!-- Logo -->
-      <div class="flex space-x-4 items-center">
-        <img src="/logo.d4f8fe33.png" width="32">
-        <h1 class="text-2xl text-slate-600 font-bold">Sylas</h1>
+      <div class="flex space-x-4 items-center justify-between">
+        <div class="flex flex-row items-center space-x-2">
+          <img src="/logo.d4f8fe33.png" width="32">
+          <h1 class="text-2xl text-slate-600 font-bold">Sylas</h1>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <button id="hamburger" class="flex flex-col space-y-1 relative w-[32px] h-[32px] lg:hidden">
+          <div class="hamburger-top hamburger-line"></div>
+          <div class="hamburger-mid hamburger-line"></div>
+          <div class="hamburger-bot hamburger-line"></div>
+        </button>
       </div>
 
-
       <!-- Navbar -->
-      <nav class="hidden lg:block">
-        <button class="hamburger">
-
-        </button>
-        <ul class="font-semibold lg:flex lg:flex-row lg:space-x-6">
+      <nav class="hidden opacity-0 transition-all duration-700 ease-in-out lg:block">
+        <ul class="flex flex-col font-semibold lg:flex-row lg:space-x-6">
           <li class="navbar-item">Features</li>
           <li class="navbar-item">Docs</li>
           <li class="navbar-item">Pricing</li>
@@ -220,7 +226,7 @@
     </div>
   </section>
 
-  <footer class="bg-slate-200">
+  <footer class="bg-slate-100">
     <div class="section-container flex flex-col space-y-4 md:space-y-0 justify-between p-8 md:flex-row">
       <!-- Logo -->
       <div class="flex items-center space-x-4">

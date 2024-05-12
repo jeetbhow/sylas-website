@@ -6,10 +6,34 @@
   @apply p-2 rounded hover:bg-slate-300 duration-200 cursor-pointer text-zinc-700;
 }
 
+header.mobile {
+  @apply bg-slate-50;
+}
+
+.mobile .navbar-item {
+  @apply text-center;
+}
+
 .section-container {
   @apply max-w-7xl w-full mx-auto;
 }
 
 .button {
   @apply p-3 font-medium rounded-md hover:opacity-80 duration-200;
+}
+
+.hamburger-line {
+  @apply w-8 h-1 bg-gray-700 transition-all duration-200;
+}
+
+.open .hamburger-top {
+  @apply transform translate-y-2 rotate-45;
+}
+
+.open .hamburger-bot {
+  @apply transform -translate-y-2 -rotate-45;
+}
+
+.open .hamburger-mid {
+  @apply opacity-0;
 }
