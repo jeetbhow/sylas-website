@@ -590,12 +590,8 @@ img, video {
   transition-duration: .2s;
 }
 
-.duration-700 {
-  transition-duration: .7s;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+.duration-300 {
+  transition-duration: .3s;
 }
 
 .navbar-item {
@@ -768,6 +764,10 @@ header.mobile {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
     margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:opacity-100 {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=index.61d3354a.css.map */
