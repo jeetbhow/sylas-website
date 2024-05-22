@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .navbar-item {
   @apply p-2 rounded hover:bg-slate-300 duration-200 cursor-pointer text-zinc-700;
 }
@@ -15,7 +21,7 @@ header.mobile {
 }
 
 .section-container {
-  @apply max-w-7xl w-full mx-auto;
+  @apply max-w-7xl w-full mx-auto py-8;
 }
 
 .button {
@@ -36,4 +42,24 @@ header.mobile {
 
 .open .hamburger-mid {
   @apply opacity-0;
+}
+
+.carousel {
+  @apply w-full h-[440px] md:h-[360px] lg:h-[380px] mx-auto rounded-md my-6 relative;
+}
+
+.track {
+  @apply flex items-center absolute w-full h-full p-4 space-x-3 transition-transform duration-200 ease-in-out overflow-hidden scroll-smooth;
+}
+
+.testimonial-card {
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @apply bg-zinc-100 p-2 min-w-[100%] lg:min-w-[33%] md:min-w-[50%];
 }
